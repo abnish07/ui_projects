@@ -1,0 +1,36 @@
+.search_box {
+  position: relative;
+  padding: 5px;
+  min-height: 5px;
+  border-radius: 2px;
+  border-color: #ddd;
+}
+
+.search_icon {
+  position: absolute;
+  margin-left: -25px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.cat_container {
+  padding-left: 0px;
+  border: 1px solid black;
+}
+
+.category_list {
+  text-decoration: none;
+  height: 10px;
+  color: #444;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #f4f4f4;
+  }  
+}

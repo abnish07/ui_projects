@@ -1,0 +1,49 @@
+.head_menu {
+  padding: 0px;
+  background-color: #ff754b;
+  position: relative;
+  box-shadow: 0 0 4px rgb(0 0 0 /80%);
+  outline: none;
+  margin-bottom: 0px !important;
+}
+
+.head_inner {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 15px;
+  
+}
+
+.top_menu {
+  display: flex;
+  position: relative;
+}
+
+.logo_img {
+  width: 240px;
+  height: 37px;
+  background-size: contain;
+  background-position: 24px center;
+  margin: 0 6px 3px 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 9999px;
+  overflow: hidden;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  margin-right: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

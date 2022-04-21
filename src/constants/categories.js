@@ -1,0 +1,26 @@
+const categories_data = [
+  { name: "All Effect", count: 637 },
+  { name: "Christmas", count: 33 },
+  { name: "Valentine day", count: 22 },
+  { name: "Easter", count: 9 },
+  { name: "Halloween, Filters", count: 21 },
+  { name: "Lab", count: 111 },
+  { name: "Cards", count: 5 },
+  { name: "Posters", count: 77 },
+  { name: "Galleries", count: 42 },
+  { name: "Photography", count: 37 },
+  { name: "Faces", count: 90 },
+  { name: "Billboards", count: 61 },
+  { name: "Celebraties", count: 24 },
+  { name: "Frames", count: 47 },
+  { name: "Drawings", count: 47 },
+  { name: "Vintage", count: 42 },
+  { name: "Misc", count: 83 },
+  { name: "Magazines", count: 17 },
+  { name: "Professions", count: 25 },
+  { name: "Movies", count: 20 },
+  { name: "TV", count: 8 },
+  { name: "Books", count: 15 },
+];
+
+export default categories_data;
