@@ -15,7 +15,6 @@
 
 .cat_container {
   padding-left: 0px;
-  border: 1px solid black;
 }
 
 .category_list {
@@ -32,5 +31,22 @@
   cursor: pointer;
   &:hover {
     background-color: #f4f4f4;
-  }  
+  }
+}
+
+.all_effect {
+  padding-left: 20px;
+}
+
+.sort_btn {
+  background-color: #ff754b;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  line-height: 22px;
 }

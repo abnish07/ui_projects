@@ -108,3 +108,5 @@ const all_effects = [
       "https://cdn.photofunia.com/effects/neon-writing/icons/medium.jpg",
   },
 ];
+
+export default all_effects;

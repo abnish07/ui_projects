@@ -1,5 +1,5 @@
 import react from "react";
-import "../stylesheet/searchBox.scss";
+import "../stylesheet/mainpage.scss";
 import { TextField } from "@mui/material";
 import { Theme, createStyles, makeStyles } from "@mui/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,7 +21,7 @@ export default function SearchBar() {
         variant="outlined"
         className="search_box"
       />
-      <FontAwesomeIcon icon={faSearch} className='search_icon' />
+      <FontAwesomeIcon icon={faSearch} className="search_icon" />
     </div>
   );
 }

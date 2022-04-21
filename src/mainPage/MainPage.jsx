@@ -4,6 +4,7 @@ import Categories from "./Categories";
 import SearchBar from "./SearchBar";
 import { Theme, createStyles, makeStyles } from "@mui/styles";
 
+
 const useStyles = makeStyles((Theme) =>
   createStyles({
     root: {

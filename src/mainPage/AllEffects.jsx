@@ -1,44 +1,76 @@
 import react from "react";
+import "../stylesheet/mainpage.scss";
+import { Redirect } from "react-router-dom";
 import all_effects from "../constants/all_effects";
 import { Theme, createStyles, makeStyles } from "@mui/styles";
-import { Grid, Item } from "@mui/material";
+import { Grid, Card, CardMedia, Typography, CardContent } from "@mui/material";
 
 const useStyles = makeStyles((Theme) =>
   createStyles({
-    root: {},
+    root: {
+      width: "1000px",
+    },
     sorting_category: {
       display: "flex",
       flexDirection: "row",
-      justifyContent: "flex-start",
-      alignItems: "flex-end",
+      justifyContent: "space-between",
+      alignItems: "center",
+      paddingLeft: 20,
+    },
+    card: {
+      marginTop: 15,
+      cursor: "pointer",
+    },
+    img: {
+      width: "100%",
     },
   })
 );
 
 export default function AllEffects() {
   const classes = useStyles();
+  const allEffectData = all_effects;
+
+  const handleClick = (title) => {
+    return <Redirect to="/title" />;
+  };
+
   return (
-    <div>
+    <div className={classes.root}>
       <div className={classes.sorting_category}>
-        <h2>All Effect</h2>
+        <h2>All Effects</h2>
         <div>
-          <button>New</button>
-          <button>Popular</button>
+          <button className="sort_btn">New</button>
+          <button className="sort_btn">Popular</button>
         </div>
       </div>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={3}>
-          <span>1</span>
-        </Grid>
-        <Grid item xs={3}>
-          <span>2</span>
-        </Grid>
-        <Grid item xs={3}>
-          <span>3</span>
-        </Grid>
-        <Grid item xs={3}>
-          <span>4</span>
-        </Grid>
+      <Grid
+        container
+        className="all_effect"
+        rowSpacing={1}
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+      >
+        {allEffectData &&
+          allEffectData.map((effect) => (
+            <Grid item xs={3}>
+              <Card
+                className={classes.card}
+                onClick={handleClick(effect.title)}
+              >
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={effect.image_url}
+                  alt={effect.image_url}
+                  className={classes.img}
+                />
+
+                <CardContent>
+                  <Typography>{effect.title}</Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
       </Grid>
     </div>
   );

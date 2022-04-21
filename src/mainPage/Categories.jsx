@@ -1,5 +1,5 @@
 import react from "react";
-import "../stylesheet/searchBox.scss";
+import "../stylesheet/mainpage.scss";
 import categories_data from "../constants/categories";
 
 export default function Categories() {
